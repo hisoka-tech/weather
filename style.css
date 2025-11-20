@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e9f1f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    width: 320px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.search-box {
+    display: flex;
+    margin-top: 15px;
+    gap: 8px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+.search-box button {
+    padding: 10px;
+    background: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error {
+    margin-top: 12px;
+    color: red;
+    font-size: 14px;
+}
+
+.weather {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+/* ==== WEATHER BACKGROUNDS ==== */
+
+body.clear {
+    background: url("images/clear.jpg") no-repeat center/cover;
+}
+
+body.rain {
+    background: url("images/rain.jpg") no-repeat center/cover;
+}
+
+body.snow {
+    background: url("images/snow.jpg") no-repeat center/cover;
+}
+
+body.clouds {
+    background: url("images/clouds.jpg") no-repeat center/cover;
+}
+
+body.drizzle {
+    background: url("images/drizzle.jpg") no-repeat center/cover;
+}
+
+body.thunderstorm {
+    background: url("images/thunder.jpg") no-repeat center/cover;
+}
+
+/* Optional: night mode */
+body.night {
+    filter: brightness(0.7);
+}
